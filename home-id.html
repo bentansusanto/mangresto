@@ -7,15 +7,16 @@
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
-        @tailwind base;
-        @tailwind components;
-        @tailwind utilities;
+        /* mengimport font external => font Poppins dan font Roboto */
         @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
     </style>
     <script>
+        // configurasi untuk tailwind css
         tailwind.config = {
+            // menginisialisasi data untuk digunakan didalam codingan
             theme: {
                 extend: {
+                    // menginisialisasi data color yang digunakan
                     colors: {
                         primary: '#ffffff',
                         second: '#74A512',
@@ -23,6 +24,7 @@
                         highlight: '#FF9900',
                         content: '#969696'
                     },
+                    // menginisialisasi data font yang akan digunakan
                     fontFamily: {
                         logo: 'Roboto',
                         content: 'Poppins'
@@ -120,8 +122,6 @@
                         </li>
                 </div>
                 </div>
-            <!-- 🇬🇧 EN -->
-           
 
             <!-- Register -->
             <div class="lg:block hidden">
@@ -139,7 +139,7 @@
 
     <!-- Hero Section -->
     <div class="md:flex flex-row-reverse block lg:mx-32 md:mx-8 lg:space-x-20 items-center mb-40">
-        <!-- bg -->
+        <!-- Background -->
         <div class="bg-[#EAF9CE] py-32 px-20">
             <img data-aos="zoom-in" data-aos-duration="1000" src="../assets/bg-hero.svg" alt="">
         </div>
@@ -287,6 +287,7 @@
     <!-- Healty Food -->
     <div class="mb-56">
         <div class="lg:mx-32 mx-8 bg-[#FFF7E2] px-10 py-10 lg:flex relative">
+            <!-- Content Healty Food Section -->
             <div class="content space-y-2">
                 <p data-aos="fade-up" data-aos-duration="1000" class="text-second text-[.9rem]">Makanan Sehat</p>
                 <h1 data-aos="fade-up" data-aos-duration="1200" class="text-[2.6rem] lg:w-[55%] md:w-[55%] font-bold">
@@ -298,6 +299,8 @@
                     <a href="shop.html">Beli Sekarang</a>
                 </button>
             </div>
+
+            <!-- Background Healty Food Section -->
             <img data-aos="zoom-in" data-aos-duration="1800" src="./assets/bg-healty.svg" alt=""
                 class="absolute lg:top-16 md:top-40 top-[18rem] right-0 lg:w-auto md:w-[45%] w-[55%]">
         </div>
@@ -309,12 +312,12 @@
     <div class="bg-[#1F2F00] lg:px-32 px-8 py-10 overflow-hidden" id="contact">
         <div class="lg:flex block font-content lg:space-x-10 space-x-0">
             <div>
-                <!-- logo -->
+                <!-- Logo -->
                 <div data-aos="fade-up" data-aos-duration="1000" class="logo font-head flex items-center space-x-3">
                     <img src="./assets/Logo.svg" alt="" class="w-10">
                     <h1 class="font-bold md:block text-white hidden font-logo">MangResto</h1>
                 </div>
-                <!-- content -->
+                <!-- Content -->
                 <div class="mt-6">
                     <p data-aos="fade-up" data-aos-duration="1200"
                         class="text-white text-[.9rem] lg:w-[80%] md:w-[45%]">Lorem ipsum dolor sit amet consectetur
