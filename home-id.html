@@ -106,15 +106,19 @@
             <div class="flex space-x-3 items-center">
                 <div class="w-auto flex items-center bg-white px-3 py-2.5 shadow-md">
                     <button type="button" class=" text-[.9rem] text-content flex items-center space-x-2" onclick="openDropdown(event,'langId')">
-                        <a href="home-id.html" class="hover:text-second">🇮🇩 ID</a>
+                        <div class="flex space-x-1 items-center">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/9/9f/Flag_of_Indonesia.svg" alt="" class="w-5">
+                            <a href="home-id.html" class="hover:text-second"> ID</a>
+                        </div>
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </button>
                     <div id="langId"
                         class="hidden bg-white/20 backdrop-blur-md text-content text-black text-[.9rem] px-3 py-3 z-50 float-left list-none text-left rounded space-y-3 shadow-lg mt-1">
-                        <li class="list-none">
-                            <a href="home.html" class="hover:text-second">🇬🇧 EN</a>
+                        <li class="list-none flex items-center space-x-1">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Flag_of_the_United_Kingdom.svg" alt="" class="w-5">
+                            <a href="home.html" class="hover:text-second">EN</a>
                         </li>
-                    </div>
+                </div>
                 </div>
             <!-- 🇬🇧 EN -->
            
