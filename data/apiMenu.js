@@ -1,5 +1,5 @@
 // Mengambil semua data
-$.getJSON('../data/menu.json', function (data) {
+$.getJSON('data/menu.json', function (data) {
     console.log(data);
     const menu = data.menu;
     $.each(menu, function(i, data) {
