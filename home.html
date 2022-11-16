@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <style>
         @tailwind base;
@@ -35,108 +36,142 @@
 
 <body class="overflow-x-hidden scroll-smooth">
 
-    <!-- Discount -->
-    <!-- End Discount -->
+
 
     <!-- Navbar -->
-    <nav class="bg-primary lg:px-32 px-6 shadow-lg py-5 flex lg:items-center font-content">
-        <div class="logo font-head">
-            <a href="#" class="flex items-center space-x-3">
-                <img src="./assets/Logo.svg" alt="" class="w-10">
-                <h1 class="font-bold md:block hidden font-logo">MangResto</h1>
-            </a>
+    <nav>
+            <!-- Discount -->
+        <div class="bg-second text-center py-1.5 text-[.8rem] font-medium text-white">
+            <p>Fast Food and Healthy Food, Buy 2 Get 20% Free</p>
         </div>
 
-        <!-- Navigation -->
-        <ul
-            class="lg:ml-10 lg:flex lg:space-x-8 lg:space-y-0 text-white lg:items-center lg:z-auto lg:static lg:bg-transparent lg:h-0 lg:w-auto lg:pl-0 lg:opacity-100 space-x-0 space-y-8 z-10 absolute bg-white/20 backdrop-blur-md w-full py-10 lg:py-0 text-[1.2rem] lg:text-[1rem] px-7 opacity-0 top-[-400px] transition-all ease-in duration-500 left-0">
-            <li class="list-none text-[.9rem] text-content">
-                <a href="home.html" class="hover:text-second">Home</a>
-            </li>
-            <li class="list-none text-[.9rem] text-content">
-                <a href="about.html" class="hover:text-second">About Us</a>
-            </li>
-                <button type="button" class=" text-[.9rem] text-content flex items-center space-x-2" onclick="openDropdown(event,'dropdownId')">
-                    <a href="shop.html" class="hover:text-second">Shop</a>
-                    <ion-icon name="chevron-down-outline"></ion-icon>
-                </button>
-                <div id="dropdownId"
-                    class="hidden bg-white/20 backdrop-blur-md text-content text-black text-[.9rem] px-3 py-3 z-50 float-left list-none text-left rounded space-y-3 shadow-lg mt-1">
-                    <li class="list-none">
-                        <a href="HealtyFood.html" class="hover:text-second">Healty Food</a>
-                    </li>
-                    <li class="list-none">
-                        <a href="FastFood.html" class="hover:text-second">Fast Food</a>
-                    </li>
-                </div>
-            <li class="list-none text-[.9rem] text-content">
-                <a href="#contact" class="hover:text-second">Contact</a>
-            </li>
-            <li class="list-none text-[.9rem] text-content">
-                <a href="blog.html" class="hover:text-second">Blog</a>
-            </li>
-            <button class="lg:hidden block bg-second px-6 py-2.5 rounded-sm text-white text-[.9rem] w-full">
-                <a href="register.html">Registration</a>
-            </button>
-        </ul>
-
-        <!-- Icon Navicon -->
-        <div class="ml-auto md:mr-20 lg:mr-0 mr-16 flex items-center lg:space-x-12 md:space-x-10 space-x-5">
-            <!-- Wishlist -->
-            <div class="love relative flex">
-                <img src="./assets/love.svg" alt="">
-                <span
-                    class="absolute ml-3 -mt-2 rounded-full bg-red-600 text-[.7rem] p-1 m-0 text-white font-content leading-tight text-center">10</span>
+        <!-- Nav -->
+        <div class="bg-primary lg:px-32 px-6 shadow-lg py-5 flex lg:items-center font-content">
+            
+            <div class="logo font-head">
+                <a href="#" class="flex items-center space-x-3">
+                    <img src="./assets/Logo.svg" alt="" class="w-10">
+                    <h1 class="font-bold md:block hidden font-logo">MangResto</h1>
+                </a>
             </div>
-            <!-- Cart -->
-            <div class="cart relative flex">
-                <img src="./assets/cart.svg" alt="">
-                <span
-                    class="absolute ml-3 -mt-2 rounded-full bg-red-600 text-[.7rem] p-1 m-0 text-white font-content leading-tight text-center">10</span>
-            </div>
-            <!-- Search -->
-            <div class="text-xl">
-                <ion-icon name="search-outline"></ion-icon>
-            </div>
-
-            <!-- Language -->
-            <div class="flex space-x-3 items-center">
-                <div class="w-auto flex items-center bg-white px-3 py-2.5 shadow-md">
-                    <button type="button" class=" text-[.9rem] text-content flex items-center space-x-2" onclick="openDropdown(event,'langId')">
-                        <a href="home.html" class="hover:text-second">🇬🇧 EN</a>
+    
+            <!-- Navigation -->
+            <ul
+                class="lg:ml-10 lg:flex lg:space-x-8 lg:space-y-0 text-white lg:items-center lg:z-auto lg:static lg:bg-transparent lg:h-0 lg:w-auto lg:pl-0 lg:opacity-100 space-x-0 space-y-8 z-20 absolute bg-white/20 backdrop-blur-md w-full py-10 lg:py-0 text-[1.2rem] lg:text-[1rem] px-7 opacity-0 top-[-500px] top-32  transition-all ease-in duration-500 left-0">
+                <li class="list-none text-[.9rem] text-content">
+                    <a href="home.html" class="hover:text-second">Home</a>
+                </li>
+                <li class="list-none text-[.9rem] text-content">
+                    <a href="about.html" class="hover:text-second">About Us</a>
+                </li>
+                    <button type="button" class=" text-[.9rem] text-content flex items-center space-x-2" onclick="openDropdown(event,'dropdownId')">
+                        <a href="shop.html" class="hover:text-second">Shop</a>
                         <ion-icon name="chevron-down-outline"></ion-icon>
                     </button>
-                    <div id="langId"
+                    <div id="dropdownId"
                         class="hidden bg-white/20 backdrop-blur-md text-content text-black text-[.9rem] px-3 py-3 z-50 float-left list-none text-left rounded space-y-3 shadow-lg mt-1">
                         <li class="list-none">
-                            <a href="home-id.html" class="hover:text-second"> 🇮🇩 ID</a>
+                            <a href="HealtyFood.html" class="hover:text-second">Healty Food</a>
                         </li>
+                        <li class="list-none">
+                            <a href="FastFood.html" class="hover:text-second">Fast Food</a>
+                        </li>
+                    </div>
+                <li class="list-none text-[.9rem] text-content">
+                    <a href="#contact" class="hover:text-second">Contact</a>
+                </li>
+                <li class="list-none text-[.9rem] text-content">
+                    <a href="blog.html" class="hover:text-second">Blog</a>
+                </li>
+                <button class="lg:hidden block bg-second px-6 py-2.5 rounded-sm text-white text-[.9rem] w-full">
+                    <a href="register.html">Registration</a>
+                </button>
+            </ul>
+    
+            <!-- Icon Navicon -->
+            <div class="ml-auto md:mr-20 lg:mr-0 mr-16 flex items-center lg:space-x-12 md:space-x-10 space-x-5">
+                <!-- Wishlist -->
+                <div class="love relative flex">
+                    <img src="./assets/love.svg" alt="">
+                    <span
+                        class="absolute ml-3 -mt-2 rounded-full bg-red-600 text-[.7rem] p-1 m-0 text-white font-content leading-tight text-center">10</span>
+                </div>
+                <!-- Cart -->
+                <div class="cart relative flex">
+                    <img src="./assets/cart.svg" alt="">
+                    <span
+                        class="absolute ml-3 -mt-2 rounded-full bg-red-600 text-[.7rem] p-1 m-0 text-white font-content leading-tight text-center">10</span>
+                </div>
+                <!-- Search -->
+                <div class="text-xl">
+                    <ion-icon name="search-outline"></ion-icon>
+                </div>
+    
+                <!-- Language -->
+                <div class="flex space-x-3 items-center">
+                    <div class="w-auto flex items-center bg-white px-3 py-2.5 shadow-md">
+                        <button type="button" class=" text-[.9rem] text-content flex items-center space-x-2" onclick="openDropdown(event,'langId')">
+                            <a href="home.html" class="hover:text-second">🇬🇧 EN</a>
+                            <ion-icon name="chevron-down-outline"></ion-icon>
+                        </button>
+                        <div id="langId"
+                            class="hidden bg-white/20 backdrop-blur-md text-content text-black text-[.9rem] px-3 py-3 z-50 float-left list-none text-left rounded space-y-3 shadow-lg mt-1">
+                            <li class="list-none">
+                                <a href="home-id.html" class="hover:text-second"> 🇮🇩 ID</a>
+                            </li>
+                    </div>
+                </div>
+                <!-- 🇬🇧 EN -->
+               
+    
+                <!-- Register -->
+                <div class="lg:block hidden">
+                    <a href="register.html" class="bg-second px-6 text-white text-[.9rem] py-2.5 rounded-sm">Registration</a>
                 </div>
             </div>
-            <!-- 🇬🇧 EN -->
-           
-
-            <!-- Register -->
-            <div class="lg:block hidden">
-                <a href="register.html" class="bg-second px-6 text-white text-[.9rem] py-2.5 rounded-sm">Registration</a>
+    
+            <div id="toggle" class="text-back text-[2rem] lg:hidden absolute right-10">
+                <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
             </div>
         </div>
-
-        <div id="toggle" class="text-back text-[2rem] lg:hidden absolute right-10">
-            <ion-icon name="menu" onclick="Menu(this)"></ion-icon>
-        </div>
-
     </nav>
     <!-- End Navbar -->
 
 
     <!-- Hero Section -->
     <div class="md:flex flex-row-reverse block lg:mx-32 md:mx-8 lg:space-x-20 items-center mb-40">
+
+        <div id="indicators-carousel" class="relative" data-carousel="static">
+            <!-- Carousel wrapper -->
+            <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+                <!-- Item 1 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item="active">
+                    <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/bg-hero.svg" alt="">
+                </div>
+                <!-- Item 2 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/bg-hero.svg" alt="">
+                </div>
+                <!-- Item 3 -->
+                <div class="hidden duration-700 ease-in-out" data-carousel-item>
+                    <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/bg-hero.svg" alt="">
+                </div>
+            </div>
+            <!-- Slider indicators -->
+            <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1"
+                    data-carousel-slide-to="0"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2"
+                    data-carousel-slide-to="1"></button>
+                <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3"
+                    data-carousel-slide-to="2"></button>
+            </div>
+        </div>
+
         <!-- bg -->
         <div class="bg-[#EAF9CE] py-32 px-20">
             <img data-aos="zoom-in" data-aos-duration="1000" src="./assets/bg-hero.svg" alt="">
         </div>
-
         <!-- Content -->
         <div class="md:mt-0 mt-10 md:mx-0 mx-8">
             <p data-aos="zoom-in" data-aos-duration="1000"
@@ -248,11 +283,11 @@
     <!-- Menu -->
     <div class="lg:mx-32 mx-8 mb-40 relative">
         <div class="space-y-2">
-            <p data-aos="fade-up" data-aos-duration="1000" class="text-highlight text-[.9rem]">Best Food</p>
-            <h1 data-aos="fade-up" data-aos-duration="1200" class="text-[2.5rem] font-bold">Food MangResto</h1>
-            <p data-aos="fade-up" data-aos-duration="1400" class="text-[.9rem] text-content lg:w-[40%]">Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Fuga eaque explicabo fugit sunt. Tempora, reprehenderit
-                similique!</p>
+            <h1 data-aos="fade-up" data-aos-duration="1100" class="text-[2.5rem] font-bold">Food MangResto</h1>
+            <div class="flex items-center">
+                <p data-aos="fade-up" data-aos-duration="1200" class="text-highlight text-[.9rem]">Best Food</p>
+                <p data-aos="fade-up" data-aos-duration="1400" class="text-[.9rem] text-content lg:w-[30%] w-[40%] ml-auto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga eaque explic!</p>
+            </div>
         </div>
 
         <!-- Category -->
@@ -291,7 +326,7 @@
                 </button>
             </div>
             <img data-aos="zoom-in" data-aos-duration="1800" src="./assets/bg-healty.svg" alt=""
-                class="absolute lg:top-16 md:top-40 top-[18rem] right-0 lg:w-auto md:w-[50%] w-[65%]">
+                class="absolute lg:top-16 md:top-40 top-[18rem] right-0 lg:w-auto md:w-[45%] w-[55%]">
         </div>
     </div>
     <!-- End Healty Food -->

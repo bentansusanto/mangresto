@@ -1,12 +1,98 @@
-<!DOCTYPE html>
-<html lang="en">
+<!doctype html>
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://unpkg.com/flowbite@1.5.4/dist/flowbite.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        @tailwind base;
+        @tailwind components;
+        @tailwind utilities;
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+    </style>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#ffffff',
+                        second: '#74A512',
+                        third: '#FFF7E',
+                        highlight: '#FF9900',
+                        content: '#969696'
+                    },
+                    fontFamily: {
+                        logo: 'Roboto',
+                        content: 'Poppins'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
-<body>
-    register page
+
+<body class="overflow-x-hidden scroll-smooth">
+
+    <!-- Registration -->
+    <div class="md:flex block font-content">
+        <!-- background -->
+        <div>
+            <img src="./assets/bg-register.jpg" alt="" class="w-[40vw] h-[100vh] md:block hidden">
+            <img src="./assets/Logo.svg" alt="" class="md:hidden block mx-auto mt-10 w-[4rem]">
+        </div>
+        <!-- form -->
+        <div class="mx-20 mt-10">
+            <!-- Head -->
+            <div class="space-y-2">
+                <h1 class="md:text-[2.5rem] text-[2rem] font-bold">Sign Up</h1>
+                <p class="text-[.9rem] lg:w-[50%] text-content">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </div> 
+            <form class="mt-10">
+                <div class="mb-3">
+                  <label for="text" class="block mb-2 text-sm text-gray-900 text-black">Fullname</label>
+                  <input type="text" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+                </div>
+                <div class="mb-3">
+                  <label for="text" class="block mb-2 text-sm text-gray-900 text-black">Address</label>
+                  <input type="text" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your address" required>
+                </div>
+                <div class="mb-4">
+                  <label for="text" class="block mb-2 text-sm text-gray-900 text-black">Phone Number</label>
+                  <input type="text" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter phone number" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="block mb-2 text-sm text-gray-900 text-black">Email</label>
+                    <input type="email" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="name@flowbite.com" required>
+                  </div>
+                <div class="mb-3">
+                    <label for="password" class="block mb-2 text-sm text-gray-900 text-black">Password</label>
+                    <input type="password" id="email" class="bg-white border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:placeholder-gray-400 text-black dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Enter your password" required>
+                  </div>
+                 
+                <button type="submit" class=" mb-3 text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Register Now</button>
+                  <p class="text-sm text-center">I have account, <a href="login.html" class="text-blue-600 font-medium">Login now</a></p>
+              </form>
+              
+        </div>
+    </div>
+
+
+
+
+    <!-- JavaScript -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2.9.1/dist/umd/popper.min.js" charset="utf-8"></script>
+    <script src="./data/apiMenu.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./index.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
+
 </html>
